@@ -1,6 +1,0 @@
-INDEX VERSION 1.4+E:\SpringBoot-Security\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2145807687.index
-4116691238.index
-3737885462.index
-1361876177.index
-3163016207.index
