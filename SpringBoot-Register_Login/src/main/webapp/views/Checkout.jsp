@@ -27,7 +27,7 @@
 	    Product Price : <c:out value="${product.productPrice}"></c:out> <br><br>
 	    Quantity :      <c:out value="${product.productQuantity}"></c:out> <br><br>
 	                 
-	                 <form action="../../checkout/${customer.customerId}/${product.productId}" method="post">
+	                 <form action="../../checkout/${customer.customerId}/${product.productId}" method="get">
 	                 
 	                    <input type="text" name="quantity" placeholder="Enter product quantity"/><br><br>
 	                    <button type="submit" class="btn">

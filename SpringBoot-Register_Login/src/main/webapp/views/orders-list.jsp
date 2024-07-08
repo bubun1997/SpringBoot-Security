@@ -20,6 +20,9 @@
 <body>
 
 <center>
+
+<h2>Hii ${customerName} check your orders below</h2>
+
 	 <table style="width:50%">
 	      <tr>
 	        <th>Customer Name</th>

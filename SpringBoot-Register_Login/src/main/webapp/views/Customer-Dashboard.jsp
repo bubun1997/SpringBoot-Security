@@ -22,10 +22,12 @@
 
  <center>
   
+  <h1>Hii ${customer.customerName} Welcome to Dashboard !! </h1>
   <h2>*** Buy products online ***</h2>
   
   <table style="width:100%">
       <tr>
+        <th>Product Id</th>
 	    <th>Product Name</th>
 	    <th>Product price</th>
 	    <th>Quantity</th>
@@ -36,6 +38,9 @@
  	 <c:forEach items="${products}" var="product">
  	 
  	    <tr>
+ 	       <td>
+ 	         <c:out value="${product.productId}"></c:out>
+ 	       </td>
  	       <td>
  	         <c:out value="${product.productName}"></c:out>
  	       </td>

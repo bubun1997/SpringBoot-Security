@@ -42,7 +42,7 @@ public class ProductService {
 
     public Product getProductById(Long id) {
 		
-		return this.productRepository.findById(id).get();
+		return this.productRepository.findById(id).orElse(null);
 	}
 	
 
