@@ -56,9 +56,6 @@
 	   		<button class="btn">Back To dashboard</button>
 	   </a>&nbsp;&nbsp;
 	  
-	  <a href="../../../home">
-	   		<button class="btn">Back To Home</button>
-	   </a>&nbsp;&nbsp;
 	  
 	   <a href="/logout">
 	   		<button class="btn">Logout</button>

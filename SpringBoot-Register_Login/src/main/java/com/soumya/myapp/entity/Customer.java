@@ -101,7 +101,9 @@ public class Customer {
 }
 
 // kunal_768@gmail.com kunal@123
-// roshni234@gmail.com desai123roshni
+// roshni234@gmail.com desai123roshni  0DE006D89D011466A851E1B1B8F2ADB0  0DE006D89D011466A851E1B1B8F2ADB0
+// kumar234tamal@gmail.com  tamal345
+
 // soumyajit4banerjee@gmail.com bubun123
 
 // Damini$23@gmail.com damini879 Admin

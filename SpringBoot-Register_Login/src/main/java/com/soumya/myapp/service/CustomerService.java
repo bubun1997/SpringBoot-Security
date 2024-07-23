@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.soumya.myapp.entity.Customer;
 import com.soumya.myapp.entity.Orders;
@@ -32,7 +33,7 @@ public class CustomerService {
 	@Autowired
 	private PasswordEncoder encoder;
 	
-	
+	@Transactional
 	public Customer saveCustomer(Customer customer) {
 		
 		 customer.setPassword(encoder.encode(customer.getPassword()));
@@ -55,6 +56,7 @@ public class CustomerService {
 	     return customer;
 	}
 	
+	@Transactional
 	public void assignProductToCustomer(Long customerId,Long productId,int quantity) {
 		
 		Customer customer = this.customerRepository.findById(customerId).get();

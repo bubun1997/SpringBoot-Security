@@ -18,6 +18,9 @@ import com.soumya.myapp.service.CustomerService;
 import com.soumya.myapp.service.OrderService;
 import com.soumya.myapp.service.ProductService;
 
+import jakarta.servlet.http.HttpSession;
+
+
 
 @Controller
 @RequestMapping("/api/customers")
@@ -34,10 +37,12 @@ public class CustomerController {
 	
 	@GetMapping("/dashboard")
 	@PreAuthorize("hasAuthority('USER')")
-	public String getDashboardPage(Model model,Principal p) {
+	public String getDashboardPage(Model model,Principal p,HttpSession session) {
 		
 		
 		String userName = p.getName();
+		
+		System.err.println(session.getId());
 		
 		
 		
@@ -47,14 +52,17 @@ public class CustomerController {
 		model.addAttribute("customer", this.customerService.getCustomerByUserName(userName));
 		
 		
+		
 		return "Customer-Dashboard";
 	}
 	
 	@GetMapping("/purchase/{customerid}/{productid}")
 	@PreAuthorize("hasAuthority('USER')")
-	public String purchaseProduct(@PathVariable Long customerid, @PathVariable Long productid,Principal p,Model model) {
+	public String purchaseProduct(@PathVariable Long customerid, @PathVariable Long productid,Principal p,Model model,HttpSession session) {
 		
-		 Customer customer = this.customerService.getCustomerByUserName(p.getName());
+		System.err.println(session.getId());
+
+		   Customer customer = this.customerService.getCustomerByUserName(p.getName());
 		   
 		   if( ! customerid.equals(customer.getCustomerId())) {
 			   
@@ -66,7 +74,7 @@ public class CustomerController {
 		  if(product == null ) 
 			  return "redirect:/api/customers/dashboard";
 
-		  else if(product.getProductQuantity() ==0)
+		  else if(product.getProductQuantity() == 0)
 			   return "redirect:/api/customers/dashboard";
 		  
 		  else {
@@ -96,7 +104,7 @@ public class CustomerController {
 			  if(product == null ) 
 				  return "redirect:/api/customers/dashboard";
 
-			  else if(product.getProductQuantity() ==0)
+			  else if(product.getProductQuantity() == 0)
 				   return "redirect:/api/customers/dashboard";
 			  
 			  else {

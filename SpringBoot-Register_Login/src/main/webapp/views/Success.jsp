@@ -21,10 +21,6 @@
 
 <br><br>
 
-<a href="../../../../home">
-   <button class="btn">Back to Home</button>
-</a> &nbsp;&nbsp;
-
 <a href="../../dashboard">
    <button class="btn">Back to Dashboard</button>
 </a> &nbsp;&nbsp;

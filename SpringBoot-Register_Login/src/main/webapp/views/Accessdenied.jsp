@@ -28,7 +28,7 @@
    
    <a href="home">
 	   <button class="btn">
-	      Continue to Home
+	      Back To Dashboard
 	   </button>
 	
 	</a>
