@@ -594,3 +594,596 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-23 20:11:31.360
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cMvOSJwq => OK
+!SESSION 2024-07-25 15:30:33.157 -----------------------------------------------
+eclipse.buildId=4.14.0.202203131612
+java.version=17.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2024-07-25 15:31:20.921
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 15:31:20.921
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d5ec2ed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e2ab1c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 15:31:20.921
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37596b44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@29ec5005,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 15:31:20.921
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42ceb67f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52e44f71,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-07-25 15:31:20.921
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e1b1d22,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@653c0c9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-07-25 15:31:32.010
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Soumyajit Banerjee'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-07-25 15:32:16.467
+!MESSAGE Illegal character in path at index 24: file:/C:/Users/Soumyajit Banerjee/Downloads/sts-4.14.0.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 24: file:/C:/Users/Soumyajit Banerjee/Downloads/sts-4.14.0.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:142)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:147)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:222)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2024-07-25 15:32:22.931
+!MESSAGE /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+!STACK 0
+java.io.FileNotFoundException: /org/eclipse/persistence/jaxb/eclipselink_oxm_2_5.xsd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:115)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:240)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:37)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:263)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.createURI(XMLCatalogs.java:139)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:87)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:65)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:52)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceConstants.storePreferencesToLemminxOptions(XMLPreferenceConstants.java:90)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:163)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:158)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$8(LanguageServerWrapper.java:353)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.ui 2 2 2024-07-25 15:48:17.103
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:12.948
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:12.961
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@626b8822[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:13.103
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:14.700
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:27.295
+!MESSAGE Boot LS startup time from start to initialized: 14101ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:29.748
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.MMAmwKVMisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:29.880
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.015
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.055
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.056
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.MMAmwKVM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.065
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.564
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:30.566
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:57:32.577
+!MESSAGE executing callback sts4.classpath.MMAmwKVM FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-07-25 15:57:32.578
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:36.858
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:36.878
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:36.922
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:36.924
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:37.012
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:56.696
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:56.708
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:56.717
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:56.718
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 15:59:56.797
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:05:37.652
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:05:37.673
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:05:37.715
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:05:37.726
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:05:37.761
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:02.280
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:02.289
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:02.296
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:02.297
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:02.331
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.135
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.144
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.151
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.152
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.182
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.764
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.772
+!MESSAGE classpath=102 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.778
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 102
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.779
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:11:11.872
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:25.728
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:25.737
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:25.776
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:25.777
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:25.803
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:35.647
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:35.655
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:35.663
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:35.664
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:35.699
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:36.141
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:36.149
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:36.155
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:36.156
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:13:36.250
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:33.353
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:33.362
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:33.420
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:33.420
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:33.483
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.335
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.344
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.351
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.352
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.380
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.935
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.941
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:47.941
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:14:48.037
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:40.129
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:40.136
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:40.164
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:40.164
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:40.236
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.279
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.288
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.294
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.295
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.318
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.786
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.791
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.792
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:18:58.866
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:06.114
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:06.121
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:06.154
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:06.155
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:06.280
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:17.958
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:17.967
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:17.975
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:17.976
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.003
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.452
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.460
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.467
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.467
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:18.546
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:28.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:28.730
+!MESSAGE classpath=106 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:28.736
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 106
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:28.736
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:20:28.757
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:16.727
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:16.733
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:16.752
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:16.753
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:16.795
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:42.636
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:42.645
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:42.653
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:42.654
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:42.683
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:43.151
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:43.157
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:43.162
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:43.163
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:27:43.244
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:17.889
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:17.898
+!MESSAGE classpath=107 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:17.905
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:17.906
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:17.937
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:18.721
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:18.727
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:18.731
+!MESSAGE buffering callback sts4.classpath.MMAmwKVM SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:18.732
+!MESSAGE executing callback sts4.classpath.MMAmwKVM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-25 16:30:19.264
+!MESSAGE executing callback sts4.classpath.MMAmwKVM SUCCESS [done]
