@@ -33,7 +33,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 		System.err.println(username+" inside user details");
 		 User user = this.userService.getUserByUserName(username);
 		 
-		 System.err.println("got user !! "+user);
+		 System.err.println("got user  "+user.getUserName()+user.getPassword());
 		
 		return new CustomUserDetails(user.getUserName(), 
 				                     user.getPassword(), 

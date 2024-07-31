@@ -1963,3 +1963,57 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 21:35:26.461
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.imKPyzZI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:05.637
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:05.648
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1b8190b1[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:05.649
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.381
+!MESSAGE Boot LS startup time from start to initialized: 3724ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.532
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.drdSETwPisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.532
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.533
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.534
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.535
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:09.536
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.drdSETwP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:10.379
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:10.387
+!MESSAGE buffering callback sts4.classpath.drdSETwP SpringBoot-Register_Login false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:10.388
+!MESSAGE executing callback sts4.classpath.drdSETwP 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:02:10.951
+!MESSAGE executing callback sts4.classpath.drdSETwP SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:11:49.738
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.drdSETwP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:11:49.747
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.drdSETwP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:11:49.747
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-07-31 22:11:49.763
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.drdSETwP => OK

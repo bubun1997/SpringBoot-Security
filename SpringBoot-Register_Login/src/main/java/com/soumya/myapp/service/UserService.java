@@ -31,7 +31,7 @@ public class UserService {
 									   return new UsernameNotFoundException("Username not found "+userName);
 									   });
 		
-		System.err.println("returning user "+user);
+		System.err.println("returning user "+user.getUserName()+" "+user.getPassword());
 		return user;
 	}
 	
