@@ -21,6 +21,7 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
 	public void handle(HttpServletRequest request, HttpServletResponse response,
 			AccessDeniedException accessDeniedException) throws IOException, ServletException {
 			
+		System.err.println("Access Denied called");
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		
         if (authentication != null) {

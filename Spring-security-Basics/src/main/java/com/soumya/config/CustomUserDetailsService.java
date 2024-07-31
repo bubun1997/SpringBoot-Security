@@ -30,7 +30,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 		
 		User user = this.userService.findUserByUserName(username);
         
-		return new CustomUserDetails(
+		System.err.println("got user "+user);
+		
+		UserDetails userDetails = new CustomUserDetails(
 				
 				        user.getMyUsername(),
 				        user.getMypassword(),
@@ -42,6 +44,10 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 				
 				);
+		
+		System.err.println("returning userdetails");
+		
+		return userDetails;
 	}
 
 }

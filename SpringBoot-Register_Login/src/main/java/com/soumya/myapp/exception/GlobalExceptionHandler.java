@@ -1,6 +1,6 @@
 package com.soumya.myapp.exception;
 
-import org.springframework.ui.Model;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -8,14 +8,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalExceptionHandler {
 	
 	
-	@ExceptionHandler(UserNameNotFoundException.class)
-	public String userNameNotFoundExceptionHandler (UserNameNotFoundException ex,Model model) {
-		
-		model.addAttribute("mssg", ex.getMessage());
-		
+	@ExceptionHandler(UsernameNotFoundException.class)
+	public String userNameNotFoundExceptionHandler (UsernameNotFoundException ex) {
+			
 		System.err.println("exception caught");
 		
-		return "invalid";
+		return "Invalid";
 	}
 
 }

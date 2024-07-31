@@ -14,6 +14,13 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @Component
 public class CustomSuccessHandler implements AuthenticationSuccessHandler {
+	
+	
+
+	public CustomSuccessHandler() {
+		super();
+		System.err.println("success handler");
+	}
 
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,

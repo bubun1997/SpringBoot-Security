@@ -77,9 +77,14 @@ public class UserService {
 		
 	    
 		
-		return this.USERS_LIST.stream().
+		User u = this.USERS_LIST.stream().
 				    filter( user -> user.getMyUsername().equalsIgnoreCase(userName)).
 				    findAny().orElseThrow(() -> new UsernameNotFoundException("User Name not found !!"));
+		
+		
+		System.err.println("returning user !!");
+		
+		return u;
 		
 		
 	}

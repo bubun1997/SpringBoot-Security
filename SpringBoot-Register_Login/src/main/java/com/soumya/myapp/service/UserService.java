@@ -3,12 +3,12 @@ package com.soumya.myapp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.soumya.myapp.entity.User;
-import com.soumya.myapp.exception.UserNameNotFoundException;
 import com.soumya.myapp.repository.UserRepository;
 
 @Service
@@ -22,8 +22,17 @@ public class UserService {
 	
 	public User getUserByUserName(String userName) {
 		
-		return this.userRepository.findByUserName(userName).
-								   orElseThrow(() -> new UserNameNotFoundException("Username not found "+userName));
+		System.err.println(userName+" fetched inside service ");
+		
+		User user = this.userRepository.
+						 findByUserName(userName).
+								   orElseThrow(() -> { 
+									   System.err.println("Username not found !!");
+									   return new UsernameNotFoundException("Username not found "+userName);
+									   });
+		
+		System.err.println("returning user "+user);
+		return user;
 	}
 	
 	@Transactional

@@ -17,18 +17,21 @@ public class SpringSecurityConfig {
 	
 	private UserDetailsService userDetailsService;
 	
-	@Autowired
+	
 	private CustomSuccessHandler successHandler;
 
-	@Autowired
-	public SpringSecurityConfig(UserDetailsService userDetailsService) {
+	public SpringSecurityConfig(UserDetailsService userDetailsService , CustomSuccessHandler successHandler) {
 		
 		this.userDetailsService = userDetailsService;
+		this.successHandler = successHandler;
+		
 	}
 	
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		
+		System.err.println(successHandler);
+
 		http.authorizeHttpRequests((requests) ->  requests.
 	              requestMatchers("/api/customers/dashboard",
 	            		          "/api/customers/purchase/**",
@@ -60,7 +63,7 @@ public class SpringSecurityConfig {
 		http.exceptionHandling( customizer -> customizer.accessDeniedHandler(new CustomAccessDeniedHandler()));
 		 
 		   
-		
+		System.err.println("security filter chain");
 		 return http.build();
 		
 	}
@@ -70,10 +73,14 @@ public class SpringSecurityConfig {
 	public AuthenticationProvider authenticationProvider(@Autowired PasswordEncoder passwordEncoder) {
 		
 		
+		System.err.println(passwordEncoder);
 		DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
 		
 		provider.setUserDetailsService(userDetailsService);
 		provider.setPasswordEncoder(passwordEncoder);
+		
+		System.err.println("Authentication provider");
+
 		
 		return provider;
 		
