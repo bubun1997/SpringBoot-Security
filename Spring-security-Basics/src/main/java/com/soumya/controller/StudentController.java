@@ -1,5 +1,6 @@
 package com.soumya.controller;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.soumya.entity.Student;
 import com.soumya.service.StudentService;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/students")
@@ -35,17 +38,38 @@ public class StudentController {
 	}
 	
 	@GetMapping
-	public ResponseEntity<List<Student>> getAllStudents(){
+	public ResponseEntity<List<Student>> getAllStudents(HttpServletRequest req,Principal p){
 		
+		System.err.println(req.getSession().getId());
+		System.err.println(p);
+		if(p != null)
+		   System.err.println(p.getName());
+
+
 		return ResponseEntity.ok(studentService.getAllStudents());
+	}
+	
+	@GetMapping("/demo")
+	@PreAuthorize("hasAuthority('USER')")
+	public ResponseEntity<String> getDemo(HttpServletRequest req,Principal p){
+		
+		System.err.println(req.getSession().getId());
+		System.err.println(p);
+		System.err.println(p.getName());
+		return ResponseEntity.ok(req.getSession().getId());
 	}
 	
 	@GetMapping("/{id}")
 	@PreAuthorize("hasAuthority('USER')")
-	public ResponseEntity<Student> findStudentById(@PathVariable Long id){
+	public ResponseEntity<Student> findStudentById(@PathVariable Long id,HttpServletRequest req){
 		
-		return ResponseEntity.ok(studentService.getStudentById(id));
+		System.err.println(req.getSession().getId());
+
+		ResponseEntity<Student> res =  ResponseEntity.ok(studentService.getStudentById(id));
 		
+		System.err.println("returing response !!");
+		
+		return res;
 	}
 
 }

@@ -14,12 +14,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CustomUserDetails implements UserDetails {
 	
+	private String uname;
 	
-	private String userName;
-	
-	private String password;
+	private String pass;
 	
 	private List<GrantedAuthority> authorities;
+	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -28,12 +28,13 @@ public class CustomUserDetails implements UserDetails {
 
 	@Override
 	public String getPassword() {
-		return this.password;
+		return this.pass;
+	
 	}
-
 	@Override
 	public String getUsername() {
-		return this.userName;
+		return this.uname;
 	}
 
 }
+

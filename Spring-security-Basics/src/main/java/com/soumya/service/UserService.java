@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.soumya.entity.User;
-import com.soumya.exception.UserNotFoundException;
 
 @Service
 public class UserService {
@@ -27,8 +27,8 @@ public class UserService {
 				
 				
 		         User.builder().
-		              userName("soumya").
-		              password(passwordEncoder.encode("bubun_1997")).
+		              myUsername("soumya").
+		              mypassword(passwordEncoder.encode("bubun_1997")).
 		              roles(
 		            		   List.of(
 		            				     "ADMIN",
@@ -37,22 +37,36 @@ public class UserService {
 		            				   )
 		            	   ).
 		              build(),
+		              
+
+				         User.builder().
+				              myUsername("kunal").
+				              mypassword(passwordEncoder.encode("kunal7234")).
+				              roles(
+				            		   List.of(
+				            				    
+				            				     "USER"
+				            				   
+				            				   )
+				            	   ).
+				              build(),
 		          
 		          User.builder().
-		              userName("ram").
+		              myUsername("ram").
 		              roles(
 		            		   List.of(
 		            				     "NORMAL"
 		            				   
 		            				   )
 		            	   ).
-		              password(passwordEncoder.encode("ram@123")).build()
+		              mypassword(passwordEncoder.encode("ram@123")).build()
 		          
 		
 		
 		
 		));
 		
+
 		
 	}
 	
@@ -64,10 +78,8 @@ public class UserService {
 	    
 		
 		return this.USERS_LIST.stream().
-				    filter( user -> user.getUserName().equalsIgnoreCase(userName)).
-				    findAny().orElseThrow(() -> UserNotFoundException.builder().
-				    		     				message("Invaled username : "+userName).
-				    		     				build());
+				    filter( user -> user.getMyUsername().equalsIgnoreCase(userName)).
+				    findAny().orElseThrow(() -> new UsernameNotFoundException("User Name not found !!"));
 		
 		
 	}

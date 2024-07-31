@@ -16,9 +16,9 @@ public class User {
 	
 	private Long id;
 	
-	private String userName;
+	private String myUsername;
 	
-	private String password;
+	private String mypassword;
 	
 	private List<String> roles;
 

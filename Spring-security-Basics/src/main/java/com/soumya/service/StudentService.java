@@ -108,7 +108,7 @@ public class StudentService {
 	
 	public Student getStudentById(Long id) {
 		
-		return STUDENT_LIST.
+		Student stud = STUDENT_LIST.
 				stream().
 				filter(
 						student -> student.getStudentId().equals(id)
@@ -120,6 +120,9 @@ public class StudentService {
 								    		message("Student not found with id : "+id).build()
 
 								);
+		
+		System.err.println("returning student !!");
+		return stud;
 	}
 
 
