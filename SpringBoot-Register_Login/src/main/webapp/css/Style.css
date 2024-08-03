@@ -1,0 +1,19 @@
+body{
+	background-color: #4A543B;
+	color: #E0E4F3
+	
+	}
+.btn{
+     cursor: pointer;
+  }
+ table, th, td {
+  border:1px solid black;
+}
+.danger{
+	
+	color:red;
+}
+.success{
+	
+	color:green;
+}

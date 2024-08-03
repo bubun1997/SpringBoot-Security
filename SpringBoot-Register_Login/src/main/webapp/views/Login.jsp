@@ -5,15 +5,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
-<style type="text/css">
-  .btn{
-     cursor: pointer;
-  }
-</style>
+
 </head>
 <body>
+<jsp:include page="Main.jsp"></jsp:include>
 
 <center>
+
   <h2>Login here</h2>
   
   <form action="/userLogin" method="post">

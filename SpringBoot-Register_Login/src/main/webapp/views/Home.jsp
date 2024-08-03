@@ -6,15 +6,14 @@
 <meta charset="ISO-8859-1">
 <title>Home</title>
 
-<style type="text/css">
-  .btn{
-     cursor: pointer;
-  }
-</style>
+
 </head>
 <body>
 
 <center>
+
+<jsp:include page="Main.jsp"></jsp:include>
+
   <h2>
    ******* Welecome to our website ******
   </h2><br><br>

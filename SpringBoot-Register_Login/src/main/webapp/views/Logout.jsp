@@ -6,24 +6,13 @@
 <meta charset="ISO-8859-1">
 <title>Logout</title>
 
-<style type="text/css">
-  .btn{
-  
-     cursor: pointer;
-  
-  }
-  h2{
-    color: red;
-  
-  }
- 
-</style>
 </head>
 <body>
+<jsp:include page="Main.jsp"></jsp:include>
 
 <center>
 
-  <h2>Successfully Logout !!</h2>
+  <h2 class="success">Successfully Logout !!</h2>
   <br><br>
   
   <a href="../home">

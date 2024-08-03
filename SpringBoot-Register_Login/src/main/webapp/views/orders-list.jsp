@@ -8,16 +8,9 @@
 <meta charset="ISO-8859-1">
 <title>Orders</title>
 
-<style type="text/css">
-  .btn{
-     cursor: pointer;
-  }
-  table, th, td {
-  border:1px solid black;
-}
-</style>
 </head>
 <body>
+<jsp:include page="Main.jsp"></jsp:include>
 
 <center>
 

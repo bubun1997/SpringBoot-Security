@@ -6,16 +6,10 @@
 <meta charset="ISO-8859-1">
 <title>Success</title>
 
-<style type="text/css">
-  .btn{
-  
-     cursor: pointer;
-  
-  }
- 
-</style>
 </head>
 <body>
+
+<jsp:include page="Main.jsp"></jsp:include>
 
 <h2>your product will be delivered to your address soon !!</h2>
 

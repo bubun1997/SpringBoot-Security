@@ -6,25 +6,13 @@
 <meta charset="ISO-8859-1">
 <title>Invalid</title>
 
-<style type="text/css">
-  .btn{
-  
-     cursor: pointer;
-  
-  }
-  
-  h2{
-    color: red;
-  
-  }
- 
-</style>
 </head>
 <body>
+<jsp:include page="Main.jsp"></jsp:include>
 
 <center>
 
-  <h2>Invalid Details</h2>
+  <h2 class="danger">Invalid Details</h2>
   <br><br>
   
   <a href="home">

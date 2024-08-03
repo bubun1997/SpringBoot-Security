@@ -10,15 +10,9 @@
 <meta charset="ISO-8859-1">
 <title>Checkout</title>
 
-<style type="text/css">
-	  .btn{
-	     cursor: pointer;
-	  }
-	 
-</style>
-
 </head>
 <body>
+	<jsp:include page="Main.jsp"></jsp:include>
 
 	<center>
 	    <h2>***** Confirm Your Order *****</h2>
