@@ -12,12 +12,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableMethodSecurity
+@EnableMethodSecurity   
 public class SpringSecurityConfig {
 	
 	private UserDetailsService userDetailsService;
-	
-	
 	private CustomSuccessHandler successHandler;
 
 	public SpringSecurityConfig(UserDetailsService userDetailsService , CustomSuccessHandler successHandler) {
@@ -33,10 +31,7 @@ public class SpringSecurityConfig {
 		System.err.println(successHandler);
 
 		http.authorizeHttpRequests((requests) ->  requests.
-	              requestMatchers("/api/customers/dashboard",
-	            		          "/api/customers/purchase/**",
-	            		          "/api/customers/checkout/**",
-	            		          "/api/customers/orders/**",
+	              requestMatchers("/api/customers/**",
 	            		          "/users/**",
 	            		          "/products/**",
 	            		          "/admin/dashboard/**").
@@ -55,13 +50,16 @@ public class SpringSecurityConfig {
 			 
 		  }).
 		  logout((customizer) -> 
-		           customizer.logoutSuccessUrl("/logout/user").permitAll());
+		           customizer.
+		           logoutSuccessUrl("/logout/user").
+		           permitAll());
 		
 		http.csrf(csrf -> csrf.disable() );
 		
 		
 		http.exceptionHandling( customizer -> customizer.accessDeniedHandler(new CustomAccessDeniedHandler()));
-		 
+		
+	
 		   
 		System.err.println("security filter chain");
 		 return http.build();

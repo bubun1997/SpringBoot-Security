@@ -13,8 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.soumya.myapp.entity.User;
 import com.soumya.myapp.service.UserService;
 
+import jakarta.servlet.http.HttpServletRequest;
 
-@Controller
+
+@Controller          
 @RequestMapping("/home")
 public class HomeController {
 	
@@ -22,8 +24,9 @@ public class HomeController {
 	private UserService userService;
 	
 	@GetMapping
-	public String getHomePage(Principal p) {
+	public String getHomePage(Principal p,HttpServletRequest req) {
 		
+		System.err.println("Home Controller "+req.getSession().getId());
 		if(p != null) {
 			
 			String uname = p.getName();

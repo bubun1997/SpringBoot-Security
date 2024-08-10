@@ -17,7 +17,7 @@ public class AdminController {
 	@PreAuthorize("hasAuthority('ADMIN')")
 	public String getAdminPage(Principal principal,HttpSession session) {
 		
-		System.err.println(session.getId());
+		System.err.println("Admin dash called "+session.getId());
 		
 		System.err.println(principal.getName());
 		return "Admin-Dashboard";

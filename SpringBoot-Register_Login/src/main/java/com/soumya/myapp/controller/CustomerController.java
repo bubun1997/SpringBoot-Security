@@ -42,7 +42,7 @@ public class CustomerController {
 		
 		String userName = p.getName();
 		
-		System.err.println(session.getId());
+		System.err.println("Customer dash called "+session.getId());
 		
 		
 		

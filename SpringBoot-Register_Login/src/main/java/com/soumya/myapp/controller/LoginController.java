@@ -12,17 +12,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.soumya.myapp.entity.User;
 import com.soumya.myapp.service.UserService;
 
+import jakarta.servlet.http.HttpServletRequest;
+
 
 @Controller
 @RequestMapping("/signin")
 public class LoginController {
 	
 	@Autowired
-	private UserService userService;
-	
+	private UserService userService; 
+
 	@GetMapping
-	public String getLoginPage(Principal p) {
-		
+	public String getLoginPage(Principal p,HttpServletRequest req) {
+		System.err.println("Signin controller "+req.getSession().getId());
+
 			if(p != null) {
 			
 			String uname = p.getName();
